@@ -1,0 +1,33 @@
+---
+export interface Props {
+  description: string;
+  img: string;
+  usuario: string;
+  idusuario: string;
+}
+const { description, idusuario, img, usuario } = Astro.props;
+---
+
+<li
+  class="block py-4 px-6 w-[350px] h-full rounded-2xl bg-coment hover:-translate-y-3 transition-transform duration-200"
+>
+  <p class="py-2">{description}</p>
+  <div class="flex py-3 gap-3">
+    <div class="w-[40px] h-[40px] mt-1">
+      <img src={img} alt="" class="w-full h-full" />
+    </div>
+    <div class="flex flex-col justify-center items-start text-sm mt-1">
+      <p>{usuario}</p>
+      <strong class="cursor-pointer">{idusuario}</strong>
+    </div>
+  </div>
+</li>
+
+<style>
+  .bg-coment {
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0);
+  }
+</style>

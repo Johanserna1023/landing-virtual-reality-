@@ -1,0 +1,42 @@
+---
+import IconCheck from "../svg/IconCheck.astro";
+import IconDedos from "../svg/IconDedos.astro";
+import IconFoco from "../svg/IconFoco.astro";
+import IconManos from "../svg/IconManos.astro";
+---
+
+<section class="relative bg-[#010208] text-white w-full h-full">
+  <div class="flex  flex-col w-[95%] m-auto py-4 lg:w-[90%] md:flex-row">
+    <div class=" w-full lg:w-[50%]">
+      <h2 class="py-3 text-2xl font-bold  text-center md:text-start md:text-4xl">
+        Our company values <span class="inline-block md:block"> culture</span>
+      </h2>
+      <div class="py-5 w-[95%] m-auto sm:w-[100%]">
+        <p class="text-xl md:text-2xl text-center sm:text-start">
+          We specialize in creating visual identities for products and branda in
+          your company.
+        </p>
+      </div>
+    </div>
+    <div class="w-full md:w-[50%]">
+      <ul class="flex justify-center items-center flex-wrap">
+        <li class="flex justify-center items-center flex-col w-[50%] py-6">
+          <IconDedos />
+          <p class="font-semibold">Be Sincere</p>
+        </li>
+        <li class="flex justify-center items-center flex-col w-[50%] py-6">
+          <IconManos />
+          <p class="font-semibold">Stronger together</p>
+        </li>
+        <li class="flex justify-center items-center flex-col w-[50%] py-6">
+          <IconCheck />
+          <p class="font-semibold">Keep it simple</p>
+        </li>
+        <li class="flex justify-center items-center flex-col w-[50%] py-6">
+          <IconFoco />
+          <p class="font-semibold">Take intelligent risks</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
